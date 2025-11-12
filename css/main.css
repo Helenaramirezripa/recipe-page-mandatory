@@ -300,12 +300,20 @@ p[data-category="seafood"], h6[data-category="seafood"], svg[data-category="seaf
     color: var(--cathegory-seafood);
 }
 
+h3[data-category="seafood"] {
+    border-left: 2px solid var(--cathegory-seafood)
+}
+
 div[data-category="chicken"],span [data-category="chicken"] {
     border-left: 1px solid var(--cathegory-chicken)
 }
 
 p[data-category="chicken"], h6[data-category="chicken"], svg[data-category="chicken"] {
     color: var(--cathegory-chicken);
+}
+
+h3[data-category="chicken"] {
+    border-left: 2px solid var(--cathegory-chicken);
 }
 
 div[data-category="dessert"] {
@@ -674,6 +682,29 @@ width: 179px;
 .filter-category-checkbox input [type="radio"]#pasta {
     accent-color: var(--cathegory-pastas);
 }
+
+.serp-item h3{
+border-left: 2px;
+}
+
+.serp-item h2{
+font-size: 22;
+text-transform: uppercase;
+color: var(--primary-color);
+}
+
+.serp{
+    width: var(--widht-12col);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.serp-container {
+    grid-column: 2 / span 10;
+}
+
+/*----------------------------- ABOUT PAGE ENDS -----------------------------*/
 
 
 /*-------------------- Footer area start --------------------*/
