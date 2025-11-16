@@ -118,7 +118,7 @@ body, html {
 }
 
 .hero{                                                    
-    background-image: url("https://picsum.photos/1200/800");    /*necesitamos el link para elegir el tamaño de las fotos*/
+    background-image: url(../img/lentil\ soup.jpg);    /*necesitamos el link para elegir el tamaño de las fotos*/
     min-height: 600px;
     height: auto;
     background-size: cover;
@@ -184,6 +184,14 @@ margin: 200px 0 0 0;
 }
 
 /*Todays recipes area start*/
+
+.background_orange_thing {
+    background-image: url(../img/orange\ circle.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 1020px;
+}
+
 .todays_recipes{
     width: var(--widht-12col);
     height: fit-content;
@@ -292,6 +300,8 @@ padding: 8px 16px 8px 16px;
 }
 
 /* data-category colors start */
+
+/* SEAFOOD */
 div[data-category="seafood"] {
     border-left: 1px solid var(--cathegory-seafood)
 }
@@ -304,6 +314,7 @@ h3[data-category="seafood"] {
     border-left: 2px solid var(--cathegory-seafood)
 }
 
+/* CHICKEN */
 div[data-category="chicken"],span [data-category="chicken"] {
     border-left: 1px solid var(--cathegory-chicken)
 }
@@ -316,6 +327,7 @@ h3[data-category="chicken"] {
     border-left: 2px solid var(--cathegory-chicken);
 }
 
+/* DESSERT */
 div[data-category="dessert"] {
     border-left: 1px solid var(--cathegory-dessert)
 }
@@ -324,6 +336,7 @@ p[data-category="dessert"], h6[data-category="dessert"], svg[data-category="dess
     color: var(--cathegory-dessert);
 }
 
+/* BEEF */
 div[data-category="beef/pork"] {
     border-left: 1px solid var(--cathegory-meats)
 }
@@ -332,6 +345,7 @@ p[data-category="beef/pork"], h6[data-category="beef/pork"], svg[data-category="
     color: var(--cathegory-meats);
 }
 
+/* PASTA */
 div[data-category="pastas"] {
     border-left: 1px solid var(--cathegory-meats)
 }
@@ -340,6 +354,7 @@ p[data-category="pastas"], h6[data-category="pastas"], svg[data-category="pastas
     color: var(--cathegory-pastas)
 }
 
+/* SNACKS */
 div[data-category="snacks"] {
     border-left: 1px solid var(--cathegory-meats)
 }
@@ -348,6 +363,7 @@ p[data-category="snacks"], h6[data-category="snacks"], svg[data-category="snacks
     color: var(--cathegory-snacks)
 }
 
+/* VEG */
 div[data-category="vegetarian"] {
     border-left: 1px solid var(--cathegory-meats)
 }
@@ -357,7 +373,7 @@ p[data-category="vegetarian"], h6[data-category="vegetarian"], svg[data-category
 }
 /* data-category colors end */
 
-
+/* Category selection starts */
 .category-selection{
     width: var(--widht-12col);
     margin: 0 auto;
@@ -382,7 +398,7 @@ p[data-category="vegetarian"], h6[data-category="vegetarian"], svg[data-category
 }
 
 .photoarea {
-    background-image: url("https://picsum.photos/1200/800");
+    background-image: url(../img/close\ up\ plating.png);
     height: 600px;
     width: var(--widht-12col);
     background-position: center;
@@ -391,6 +407,7 @@ p[data-category="vegetarian"], h6[data-category="vegetarian"], svg[data-category
     justify-content: center;
     clip-path: polygon(0 11%, 100% 27%, 100% 100%, 0% 100%);
     margin:0 auto;
+    background-size: cover;
 }
 
 .photoarea-container {
@@ -508,7 +525,7 @@ width: 179px;
 
 /*kitchen area item 2 ----------------------------------------*/
 .inthekitchen-area-content-item2{
-    background-image: url(https://picsum.photos/1200/800);
+    background-image: url(../img/chef\ squeezing.png);
     background-size: cover;
     background-position: center;
 
@@ -516,7 +533,7 @@ width: 179px;
 
 /*kitchen area item 3 ----------------------------------------*/
 .inthekitchen-area-content-item3{
-    background-image: url(https://picsum.photos/1200/800);
+    background-image: url(../img/list-notebook.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -575,7 +592,7 @@ width: 179px;
 
 /*kitchen area item 6 ----------------------------------------*/
 .inthekitchen-area-content-item6{
-    background-image: url(https://picsum.photos/1200/800);
+    background-image: url(../img/person-cooking.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -660,7 +677,6 @@ width: 179px;
 .filter-category-checkbox input:checked {
     border: 2px solid var(--primary-color);
 }
-
 .filter-category-checkbox input [type="radio"]#chicken {
     accent-color: var(--cathegory-chicken);
 }
@@ -683,31 +699,57 @@ width: 179px;
     accent-color: var(--cathegory-pastas);
 }
 
-.serp-item h3{
-border-left: 2px;
-}
-
-.serp-item h2{
-font-size: 22;
-text-transform: uppercase;
-color: var(--primary-color);
-}
-
 .serp{
     width: var(--widht-12col);
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    border-top: 1px solid var(--background-color-dark-bg);
 }
 
 .serp-container {
     grid-column: 2 / span 10;
 }
 
+.serp-item {
+    margin: 0 auto;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-black);
+    padding: 50px 0;
+}
+
+.serp-item h2{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+.serp-item h3{
+    color: var(--background-color-light);
+    padding-left: 9px;
+    font: 16px;
+}
+
+.serp-item p{
+    color: var(--background-color-light);
+    font-size: 16px;
+    font-weight: 300;
+}
+
 /*----------------------------- ABOUT PAGE ENDS -----------------------------*/
 
 
-/*-------------------- Footer area start --------------------*/
+/*----------------------------- RECIPES PAGE ENDS -----------------------------*/
+
+
+
+/*----------------------------- RECIPES PAGE ENDS -----------------------------*/
+
+
+/*-------------------- FOOTER AREA START --------------------*/
 
 .footer-area{
     width:auto;
