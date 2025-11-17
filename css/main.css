@@ -752,8 +752,13 @@ width: 179px;
 
 
 /*----------------------------- RECIPES PAGE ENDS -----------------------------*/
+.hero-recipe-icons {
+width: 24px;
+}
 
-
+.hero-recipe-icons p{
+color: var(--background-color-light);
+}
 
 /*----------------------------- RECIPES PAGE ENDS -----------------------------*/
 
